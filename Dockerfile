@@ -1,4 +1,5 @@
 FROM tensorflow/tensorflow
+FROM pytorch/pytorch
 
 COPY requirements.txt . 
 
