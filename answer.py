@@ -1,9 +1,11 @@
 import os
-
-from transformers.pipelines import pipeline
+import time
+import torch
+from transformers import pipeline
 from flask import Flask
 from flask import request
 from flask import jsonify
+import sqlite3
 
 # Create my flask app
 app = Flask(__name__)
